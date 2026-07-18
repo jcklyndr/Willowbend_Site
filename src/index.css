@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  --primary-color: #2e6f40;
+  --secondary-color: #253d2c;
+  --tertiary-color: #44cc11;
+  --fourth-color: #449423;
+  --accent-color: #d5b07c;
+  --background-color: #ebf2ea;
+  --text-color: #333333;
+  --alert-info: #9fe68e;
+  --gray: #757677;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.footer-link,
+.btn,
+.accordion-button {
+  font-family: "Zalando Sans Expanded", opensans, sans-serif;
+}
+p,
+li,
+a,
+span,
+div {
+  font-family: "Lora", sans-serif;
+}
