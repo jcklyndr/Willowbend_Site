@@ -1,16 +1,18 @@
 import { useState } from "react";
+import { BrowserRouter } from "react-router-dom";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "./assets/vite.svg";
 import heroImg from "./assets/hero.png";
+import ScrollToTop from "./components/layout/ScrollToTop";
+import AppRoutes from "./router/AppRoutes";
 import "./variable.css";
 
 function App() {
   return (
-    <>
-      <section className="">
-        <h1 className="text-2xl font-bold">hello</h1>
-      </section>
-    </>
+    <BrowserRouter>
+      <ScrollToTop />
+      <AppRoutes />
+    </BrowserRouter>
   );
 }
 
