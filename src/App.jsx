@@ -1,13 +1,19 @@
-import { useState } from "react";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { BrowserRouter } from "react-router-dom";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
-import heroImg from "./assets/hero.png";
 import ScrollToTop from "./components/layout/ScrollToTop";
 import AppRoutes from "./router/AppRoutes";
 import "./variable.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      once: true,
+    });
+  }, []);
+
   return (
     <BrowserRouter>
       <ScrollToTop />

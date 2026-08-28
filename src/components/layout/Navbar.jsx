@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { HugeiconsIcon } from "@hugeicons/react";
@@ -10,7 +9,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className=" top-0 left-0 z-50 w-full border-b border-(--secondary-color) bg-(--secondary-color) shadow-md">
+    <nav className="fixed top-0 left-0 z-50 w-full border-b border-(--secondary-color) bg-(--secondary-color) shadow-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-8">
         {/* Logo */}
         <a href="/" className="flex items-center gap-3">

@@ -4,7 +4,9 @@ import Hero from "../components/sections/Hero";
 function Home() {
   return (
     <>
-      <Hero />
+      <main className="pt-16">
+        <Hero />
+      </main>
     </>
   );
 }
