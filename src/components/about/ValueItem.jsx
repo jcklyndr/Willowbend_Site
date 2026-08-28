@@ -1,5 +1,3 @@
-import React from "react";
-
 function ValueItem({ icon, title, description }) {
   return (
     <div className="flex">

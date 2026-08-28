@@ -1,5 +1,3 @@
-import React from "react";
-
 function AboutHero() {
   return (
     <section className="bg-(--secondary-color) text-white text-center py-16 px-4">

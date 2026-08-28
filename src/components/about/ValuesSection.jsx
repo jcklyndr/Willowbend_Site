@@ -1,4 +1,3 @@
-import React from "react";
 import ValueItem from "./ValueItem";
 
 const values = [

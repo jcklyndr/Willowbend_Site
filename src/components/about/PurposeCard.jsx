@@ -1,5 +1,3 @@
-import React from "react";
-
 function PurposeCard({ icon, title, description, aosDelay }) {
   return (
     <div data-aos="zoom-in-up" data-aos-delay={aosDelay}>

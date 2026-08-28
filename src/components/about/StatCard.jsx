@@ -1,5 +1,3 @@
-import React from "react";
-
 function StatCard({ value, label, bgClass, textClass, aosDelay }) {
   return (
     <div data-aos="flip-left" data-aos-duration="500" data-aos-delay={aosDelay}>

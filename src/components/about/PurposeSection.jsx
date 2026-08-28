@@ -1,4 +1,3 @@
-import React from "react";
 import PurposeCard from "./PurposeCard";
 
 const purposes = [

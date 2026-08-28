@@ -1,5 +1,3 @@
-import React from "react";
-
 function CommunitySection() {
   return (
     <div className="mb-16">

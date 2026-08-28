@@ -1,4 +1,3 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { ArrowDown02Icon } from "@hugeicons/core-free-icons";
@@ -24,7 +23,7 @@ function Hero() {
       <div className="relative z-10 mx-auto flex max-w-5xl flex-col items-center px-6 text-center text-white">
         {/* Welcome */}
         <ruby
-          className=" text-lg font-light md:text-2xl"
+          className="mt-4 text-lg font-light md:text-2xl"
           aria-labelledby="welcome-heading"
         >
           Mabuhay<rp>(</rp>
