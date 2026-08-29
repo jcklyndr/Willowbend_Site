@@ -1,3 +1,5 @@
+import willowbendimg6 from "../../assets/images/willowbendimg6.webp";
+
 function CommunitySection() {
   return (
     <div className="mb-16">
@@ -34,7 +36,7 @@ function CommunitySection() {
         <div data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">
           <div className="rounded-lg shadow-sm overflow-hidden">
             <img
-              src="/Root/images/willowbendimg6.webp"
+              src={willowbendimg6}
               className="w-full h-full object-cover"
               alt="Willowbend Community"
             />
