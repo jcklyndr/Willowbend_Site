@@ -11,6 +11,7 @@ function App() {
     AOS.init({
       duration: 700,
       once: true,
+      mirror: false,
     });
   }, []);
 

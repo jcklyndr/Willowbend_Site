@@ -51,7 +51,7 @@ const values = [
 function ValuesSection() {
   return (
     <div
-      className="mb-16 bg-(--secondary-color) p-8 md:p-12 rounded-lg text-white"
+      className="mb-16 bg-linear-to-br from-secondary to-primary p-8 md:p-12 rounded-lg text-white"
       data-aos="fade-up"
       data-aos-duration="1300"
     >

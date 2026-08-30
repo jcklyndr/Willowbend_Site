@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* * {
+  outline: 1px solid red !important;
+} */
 :root {
   --primary-color: #2e6f40;
   --secondary-color: #253d2c;
@@ -12,6 +15,18 @@
   --gray: #757677;
 }
 
+@theme {
+  --color-primary: var(--primary-color);
+  --color-secondary: var(--secondary-color);
+  --color-tertiary: var(--tertiary-color);
+  --color-fourth: var(--fourth-color);
+  --color-accent: var(--accent-color);
+  --color-background: var(--background-color);
+  --color-text: var(--text-color);
+  --color-alert-info: var(--alert-info);
+  --color-gray: var(--gray);
+}
+
 h1,
 h2,
 h3,
@@ -21,7 +36,7 @@ h6,
 .footer-link,
 .btn,
 .accordion-button {
-  font-family: "Zalando Sans Expanded", opensans, sans-serif;
+  font-family: "Google Sans Flex", sans-serif;
 }
 p,
 li,

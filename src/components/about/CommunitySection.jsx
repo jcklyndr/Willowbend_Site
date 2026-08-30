@@ -4,7 +4,7 @@ function CommunitySection() {
   return (
     <div className="mb-16">
       <h2
-        className="text-2xl font-bold mb-6 text-(--secondary-color)"
+        className="text-3xl font-bold mb-6 text-(--secondary-color)"
         data-aos="fade-right"
         data-aos-duration="700"
       >

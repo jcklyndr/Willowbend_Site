@@ -2,6 +2,7 @@ export const rulesData = [
   {
     id: "community-conduct",
     title: "Community Conduct",
+    subtitle: "Respect, courtesy, and shared responsibility among neighbors.",
     icon: "UserGroupIcon",
     rules: [
       {
@@ -39,6 +40,7 @@ export const rulesData = [
   {
     id: "property-housing",
     title: "Property & Housing",
+    subtitle: "Upkeep, exterior changes, and rental compliance.",
     icon: "House01Icon",
     rules: [
       {
@@ -81,6 +83,7 @@ export const rulesData = [
   {
     id: "security-safety",
     title: "Security & Safety",
+    subtitle: "Registration, speed limits, and designated parking areas.",
     icon: "SecurityCheckIcon",
     rules: [
       {
@@ -123,6 +126,7 @@ export const rulesData = [
   {
     id: "vehicles-parking",
     title: "Vehicles & Parking",
+    subtitle: "Quiet hours, construction times, and shared-space etiquette.",
     icon: "Car01Icon",
     rules: [
       {
