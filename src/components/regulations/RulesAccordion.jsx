@@ -6,7 +6,7 @@ import {
   CarIcon,
   Megaphone01Icon,
 } from "@hugeicons/core-free-icons";
-import { rulesData } from "../regulations/rulesData";
+import { rulesData } from "../../data/rulesData";
 import Accordion from "../ui/Accordion";
 
 const iconMap = {
