@@ -5,7 +5,7 @@ import RulesAccordion from "../components/regulations/RulesAccordion";
 
 function Regulations() {
   return (
-    <main className="pt-16 bg-(--background-color) min-h-screen">
+    <main className="pt-10 bg-(--background-color) min-h-screen">
       <RegulationsHero />
 
       <section className="py-10 sm:py-14 relative overflow-hidden bg-background">

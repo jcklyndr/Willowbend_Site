@@ -7,10 +7,10 @@ import siteIcon from "../assets/images/site_icon.png";
 
 function About() {
   return (
-    <main className="pt-16 bg-(--background-color) min-h-screen">
+    <main className="pt-10 bg-(--background-color) min-h-screen">
       <AboutHero />
 
-      <section className="relative overflow-hidden py-16">
+      <section className="relative overflow-hidden py-10">
         {/* Watermark background */}
         <img
           src={siteIcon}

@@ -9,14 +9,14 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 z-50 w-full border-b border-(--secondary-color) bg-(--secondary-color) shadow-md">
+    <nav className="fixed top-0 left-0 z-50 w-full border-b border-(--secondary-color) bg-(--secondary-color)">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-8">
         {/* Logo */}
         <a href="/" className="flex items-center gap-3">
           <img src={logo} alt="Willowbend Subdivision" className="h-11 w-11" />
 
           {/* Desktop */}
-          <span className="hidden text-lg font-bold text-white md:block">
+          <span className="hidden text-lg font-extrabold text-white md:block">
             Willowbend Subdivision
           </span>
 
@@ -29,7 +29,7 @@ function Navbar() {
           </span>
         </a>
         {/* Desktop Navigation */}
-        <ul className="hidden items-center gap-8 rounded-2xl bg-white px-6 py-2 font-semibold lg:flex">
+        <ul className="hidden items-center gap-12 rounded-2xl px-6 py-2 font-semibold lg:flex">
           {navigation.map((link) => (
             <li key={link.name}>
               <NavLink
@@ -38,7 +38,7 @@ function Navbar() {
                   `transition-colors duration-300 ${
                     isActive
                       ? "text-(--accent-color)"
-                      : "text-(--secondary-color) hover:text-(--primary-color)"
+                      : "text-white hover:text-(--accent-color)/50"
                   }`
                 }
               >
