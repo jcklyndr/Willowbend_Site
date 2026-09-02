@@ -1,38 +1,52 @@
+export const faqCategories = [
+  "All Topics",
+  "Amenities & Clubhouse",
+  "HOA Dues & Billing",
+  "Home Modifications",
+  "Security & Visitors",
+];
+
 export const faqData = [
   {
     id: "faq-1",
+    category: "Amenities & Clubhouse",
     title: "What are the community amenities available to residents?",
     content:
-      "Willowbend Subdivision offers a variety of amenities including a community swimming pool, fitness center, basketball courts, walking trails, landscaped parks, and a clubhouse available for resident events. We also maintain well-lit streets and security patrols for resident safety.",
+      "Residents have access to the multi-purpose clubhouse, outdoor basketball court, children's playground, and landscaped perimeter jogging paths. Amenities operate daily from 6:00 AM to 9:00 PM.",
   },
   {
     id: "faq-2",
+    category: "HOA Dues & Billing",
     title: "Are there homeowners association (HOA) fees?",
     content:
-      "Yes, Willowbend Subdivision requires monthly HOA fees to maintain community amenities, landscaping, security services, and common areas. Current HOA fees are $250/month for standard residences. For specific details about your property, please contact our HOA office.",
+      "Yes. Monthly dues cover 24/7 security gate operations, common area power and water, street maintenance, and waste collection support. Statements are distributed on the 1st of every month.",
   },
   {
     id: "faq-3",
+    category: "Home Modifications",
     title: "Can I make exterior modifications to my home?",
     content:
-      "All exterior modifications require approval from the Architectural Review Committee (ARC). This includes painting, roofing changes, landscape modifications, and addition of structures. Submittal forms are available on our website or through the HOA office. Most decisions are made within 14 business days.",
+      "Major structural and exterior modifications require an architectural clearance form submitted to the HOA committee to ensure neighborhood design harmony and boundary clearances.",
   },
   {
     id: "faq-4",
+    category: "Security & Visitors",
     title: "Are pets allowed in Willowbend?",
     content:
-      "Pets are welcome at Willowbend Subdivision with certain restrictions. Residents may keep up to two dogs or cats. Pets must be kept on a leash in common areas and must not disturb neighbors. Dangerous breeds as defined by local ordinance are prohibited. Pet owners are responsible for cleaning up after their pets.",
+      "Yes, pets are welcome! We ask that pet owners keep dogs on a leash in common parks and always clean up after their pets to keep walking paths clean.",
   },
   {
     id: "faq-5",
+    category: "HOA Dues & Billing",
     title: "How often are community meetings held?",
     content:
-      "The HOA Board holds monthly meetings on the second Tuesday of each month at 7:00 PM in the community clubhouse. Annual general meetings for all residents are held in Q2. Meeting agendas and minutes are posted on our website one week prior to each meeting. All residents are encouraged to attend.",
+      "General assemblies occur biannually, while HOA board consultation hours are open every first Saturday of the month at the admin office.",
   },
   {
     id: "faq-6",
+    category: "Security & Visitors",
     title: "What should I do if I have a complaint or concern?",
     content:
-      "We encourage residents to address concerns through our formal process. Submit a written complaint to the HOA office via email or mail. The Board will review your concern within 30 days and provide a response. For urgent safety matters, contact our security office or local authorities immediately.",
+      "You can file a formal ticket using the inquiry form on this page, or visit the HOA administration office in person during standard weekday office hours.",
   },
 ];
