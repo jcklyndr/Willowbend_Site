@@ -4,7 +4,7 @@ import OfficersGrid from "../components/officers/OfficersGrid";
 
 function Officers() {
   return (
-    <main>
+    <main className="pt-10 bg-(--background-color) min-h-screen">
       <OfficersHero />
 
       <section className="relative overflow-hidden py-10 sm:py-20 px-4 sm:px-6 lg:px-8 bg-(--background-color)">
