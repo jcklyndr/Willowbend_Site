@@ -1,40 +1,13 @@
 import PageHero from "../components/ui/PageHero";
 import ContactCard from "../components/ui/ContactCard";
-import { Home01Icon, Call02Icon, Mail01Icon } from "@hugeicons/core-free-icons";
-
-const contactData = [
-  {
-    icon: Home01Icon,
-    title: "Visit Us",
-    subtitle: "Community Office",
-    mainLine: "Willowbend Info Center",
-    description:
-      "Drop by during business hours for in-person support or ask directly at the main entrance.",
-  },
-  {
-    icon: Call02Icon,
-    title: "Call Us",
-    subtitle: "Community Hotline",
-    mainLine: "0960 113 4960",
-    description:
-      "Speak with a community representative for questions and guidance.",
-  },
-  {
-    icon: Mail01Icon,
-    title: "Contact Us",
-    subtitle: "Email & Social",
-    mainLine: "info@willowbend.com",
-    description:
-      "Send us an email for community news, or reach us on social media for quick announcements.",
-  },
-];
+import { contactData } from "../data/contactData";
 
 function Contact() {
   return (
     <main className="pt-10 bg-(--background-color) min-h-screen">
       <PageHero
         title="Reach Out to Officers"
-        subtitle="Whether you have questions about our community, need support, or want to connect with neighbors, we're here to help. Contact us through any of the methods below and we'll get back to you as soon as possible."
+        description="Whether you have questions about our community, need support, or want to connect with neighbors, we're here to help. Contact us through any of the methods below and we'll get back to you as soon as possible."
       />
 
       <section
@@ -85,9 +58,11 @@ function Contact() {
           <iframe
             title="Willowbend Subdivision Location"
             className="h-full w-full"
-            frameBorder="0"
-            scrolling="no"
-            src="https://maps.google.com/maps?width=600&height=400&hl=en&q=Pandi%20Bulacan%20Philippines&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3489.3269015913475!2d120.98370477457804!3d14.89068406990981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sph!4v1788411584087!5m2!1sen!2sph"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="strict-origin-when-cross-origin"
           ></iframe>
         </div>
       </section>
