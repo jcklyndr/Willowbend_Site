@@ -2,7 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { Cancel01Icon, Menu01Icon } from "@hugeicons/core-free-icons";
-import { navigation } from "../../data/navigation";
+import { navigation } from "../../data/navigationData";
 import logo from "../../assets/images/site_icon.png";
 
 function Navbar() {
@@ -74,21 +74,24 @@ function Navbar() {
           isOpen ? "max-h-96" : "max-h-0"
         }`}
       >
-        <ul className="flex flex-col border-t border-white/20 bg-[--secondary-color]">
+        <ul className="flex flex-col gap-1 border-t border-white/10 bg-secondary px-3 py-3">
           {navigation.map((link) => (
             <li key={link.name}>
               <NavLink
                 to={link.path}
                 onClick={() => setIsOpen(false)}
                 className={({ isActive }) =>
-                  `transition-colors duration-300 ${
+                  `flex items-center gap-3 rounded-xl px-4 py-3 text-sm font-medium transition-colors duration-200 ${
                     isActive
-                      ? "text-[--accent-color]"
-                      : "text-[--secondary-color] hover:text-[--primary-color]"
+                      ? "bg-white/10 text-accent"
+                      : "text-white/80 hover:bg-white/5 hover:text-white"
                   }`
                 }
               >
-                {link.name}
+                {link.icon && (
+                  <HugeiconsIcon icon={link.icon} size={20} strokeWidth={1.8} />
+                )}
+                <span>{link.name}</span>
               </NavLink>
             </li>
           ))}
