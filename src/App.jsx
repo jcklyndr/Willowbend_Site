@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { BrowserRouter } from "react-router-dom";
-import ScrollToTop from "./components/layout/ScrollToTop";
+import ScrollToTop from "./components/ui/ScrollToTop";
 import AppRoutes from "./router/AppRoutes";
 import "./variable.css";
 
