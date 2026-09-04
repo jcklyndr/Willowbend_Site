@@ -8,7 +8,7 @@ import Officers from "../pages/Officers";
 import Faqs from "../pages/Faqs";
 import History from "../pages/History";
 import Contact from "../pages/Contact";
-import Privacy from "../pages/Privacy";
+import Privacy from "../pages/PrivacyPolicy";
 
 function AppRoutes() {
   return (
@@ -17,12 +17,12 @@ function AppRoutes() {
         <Route index element={<Home />} />
 
         <Route path="about" element={<About />} />
-        <Route path="regulations" element={<Regulations />} />
+        <Route path="rules-and-regulations" element={<Regulations />} />
         <Route path="officers" element={<Officers />} />
         <Route path="faqs" element={<Faqs />} />
         <Route path="history" element={<History />} />
         <Route path="contact" element={<Contact />} />
-        <Route path="privacy" element={<Privacy />} />
+        <Route path="privacy-policy" element={<Privacy />} />
       </Route>
     </Routes>
   );
