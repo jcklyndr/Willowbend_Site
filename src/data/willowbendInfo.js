@@ -15,7 +15,7 @@ export const stats = [
   },
   {
     icon: Car01Icon,
-    value: "3",
+    value: "18",
     label: "Number of TODA",
     bgClass: "bg-fourth",
     textClass: "text-white",
