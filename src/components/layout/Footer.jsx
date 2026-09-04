@@ -174,7 +174,7 @@ function Footer() {
             </div>
 
             <NavLink
-              to="/privacy"
+              to="/privacy-policy"
               className="text-sm text-gray-300 transition hover:text-white"
             >
               Privacy Policy
