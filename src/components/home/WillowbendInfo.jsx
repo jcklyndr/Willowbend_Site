@@ -1,10 +1,5 @@
 import { HugeiconsIcon } from "@hugeicons/react";
-import {
-  VoteIcon,
-  Store01Icon,
-  ArrowRight01Icon,
-} from "@hugeicons/core-free-icons";
-import { NavLink } from "react-router-dom";
+import { VoteIcon, Store01Icon } from "@hugeicons/core-free-icons";
 import StatCard from "../ui/StatCard";
 import { stats, committees, businesses } from "../../data/willowbendInfo";
 

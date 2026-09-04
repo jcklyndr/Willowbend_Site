@@ -3,6 +3,9 @@ import {
   Car01Icon,
   House03Icon,
   UserMultipleIcon,
+  BankIcon,
+  UserGroup03Icon,
+  Shield01Icon,
 } from "@hugeicons/core-free-icons";
 
 export const stats = [
@@ -55,4 +58,22 @@ export const businesses = [
   "Computer Shop",
   "Barbershop",
   "Printing Shop",
+];
+
+export const highlights = [
+  {
+    icon: BankIcon,
+    stat: "Pag-IBIG Ready",
+    label: "Bank & in-house financing accepted",
+  },
+  {
+    icon: UserGroup03Icon,
+    stat: "250+",
+    label: "Homeowner families",
+  },
+  {
+    icon: Shield01Icon,
+    stat: "19/7",
+    label: "Gated & guarded community",
+  },
 ];

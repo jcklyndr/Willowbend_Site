@@ -1,5 +1,5 @@
-import { NavLink } from "react-router-dom";
 import { HugeiconsIcon } from "@hugeicons/react";
+import { highlights } from "../../data/willowbendInfo";
 import { ArrowDown02Icon } from "@hugeicons/core-free-icons";
 
 import heroImage from "../../assets/images/hero.jpg";
@@ -17,16 +17,20 @@ function Hero() {
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-linear-to-b from-[rgba(37,61,44,0.65)] via-[rgba(37,61,44,0.75)] to-[rgba(37,61,44,0.9)]" />
 
-      {/* Content */}
-      <div className="relative z-10 mx-auto flex max-w-5xl flex-col items-center px-6 text-center text-white">
+      <div className="relative z-10 mx-auto flex max-w-5xl flex-col items-center px-6 pt-12 text-center text-white md:pt-16">
         {/* Welcome */}
         <ruby
-          className="mt-4 text-lg font-light md:text-2xl"
+          className="text-lg font-light leading-[2.5] md:text-2xl md:leading-[2.2]"
           aria-labelledby="welcome-heading"
           data-aos="fade-up"
         >
           Mabuhay<rp>(</rp>
-          <rt id="welcome-heading">Welcome / Long Live</rt>
+          <rt
+            id="welcome-heading"
+            className="text-xs font-normal text-white/80 md:text-sm"
+          >
+            Welcome / Long Live
+          </rt>
           <rp>)</rp>
         </ruby>
 
@@ -43,7 +47,7 @@ function Hero() {
 
         {/* Description */}
         <p
-          className="max-w-3xl text-lg leading-8 text-gray-200 md:text-xl"
+          className="max-w-4xl text-lg leading-8 text-gray-200 md:text-xl"
           data-aos="fade-up"
           data-aos-delay="200"
         >
@@ -52,32 +56,37 @@ function Hero() {
           connected neighborhood for every resident.
         </p>
 
-        {/* CTA Buttons */}
+        {/* Housing Highlights */}
         <div
-          className="mt-10 flex w-full flex-col gap-4 sm:w-auto sm:flex-row"
+          className="mt-10 grid w-full grid-cols-1 divide-y divide-white/15 rounded-2xl border border-white/30 bg-secondary/50 backdrop-blur-sm sm:grid-cols-3 sm:divide-x sm:divide-y-0"
           data-aos="fade-up"
           data-aos-delay="300"
         >
-          <NavLink
-            to="/about"
-            className="rounded-lg bg-primary px-8 py-4 font-semibold text-white transition hover:brightness-110"
-          >
-            Explore Community
-          </NavLink>
-
-          <NavLink
-            to="/regulations"
-            className="rounded-lg border-2 border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-secondary"
-          >
-            View Regulations
-          </NavLink>
+          {highlights.map((item, index) => (
+            <div
+              key={item.stat}
+              className="flex flex-col items-center gap-2 px-6 py-6 text-center"
+              data-aos="fade-up"
+              data-aos-delay={300 + index * 100}
+            >
+              <span className="flex size-12 items-center justify-center rounded-full bg-accent/15 text-accent">
+                <HugeiconsIcon icon={item.icon} size={20} />
+              </span>
+              <p className="text-xl font-bold text-white md:text-2xl">
+                {item.stat}
+              </p>
+              <p className="text-sm text-gray-200/80 md:text-base">
+                {item.label}
+              </p>
+            </div>
+          ))}
         </div>
 
         {/* Scroll Indicator */}
         <div
-          className="mt-16 flex flex-col items-center text-gray-200"
+          className="mt-10 flex flex-col items-center text-gray-200"
           data-aos="fade-up"
-          data-aos-delay="400"
+          data-aos-delay="700"
         >
           <span className="mb-2 text-sm tracking-widest uppercase">Scroll</span>
 
