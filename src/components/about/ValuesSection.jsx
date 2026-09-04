@@ -1,4 +1,3 @@
-import { HugeiconsIcon } from "@hugeicons/react";
 import {
   ThumbsUpIcon,
   SquareUnlock02Icon,
