@@ -3,7 +3,7 @@
 A modern, responsive community website for **Willowbend Subdivision**, located in Brgy. Pinagkuartelan, Pandi, Bulacan, Philippines. This site serves as the official public-facing resource for residents and visitors — covering subdivision information, rules and regulations, HOA officers, contact details, FAQs, and a photo gallery.
 
 <p align="center">
-  <img src="./assets/mockup.png" alt="Willowbend Subdivision website mockup" width="100%" />
+  <img src="./src/assets/mockup.png" alt="Willowbend Subdivision website mockup" width="100%" />
 </p>
 ---
  
@@ -29,4 +29,4 @@ This project is built using:
 
 ## :page_with_curl: Note
 
-This project is front-end only. No backend specifically for the form.
+This project is front-end only. No backend integrated specifically for the form.
