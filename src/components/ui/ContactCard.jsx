@@ -25,7 +25,7 @@ function ContactCard({
             className="text-white"
           />
         </div>
-        <div>
+        <div className="min-w-0">
           <h3 className="text-lg font-bold leading-snug text-white sm:text-xl">
             {title}
           </h3>
@@ -37,7 +37,7 @@ function ContactCard({
 
       {/* Body */}
       <div className="flex flex-1 flex-col justify-between p-6 sm:p-7">
-        <p className="text-xl font-extrabold text-text sm:text-2xl">
+        <p className="break-words text-lg font-extrabold text-text [overflow-wrap:anywhere] sm:text-2xl">
           {mainLine}
         </p>
         <p className="mt-3 text-sm leading-relaxed text-gray">{description}</p>
