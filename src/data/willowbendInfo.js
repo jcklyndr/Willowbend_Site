@@ -12,7 +12,7 @@ export const stats = [
   {
     icon: UserGroupIcon,
     value: "12",
-    label: "Elected HOA Officers",
+    label: "HOA Officers",
     bgClass: "bg-primary",
     textClass: "text-white",
   },
